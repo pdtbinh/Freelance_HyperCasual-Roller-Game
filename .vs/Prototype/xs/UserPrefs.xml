@@ -1,26 +1,16 @@
 ﻿<Properties StartupConfiguration="{B1235EE4-71EE-C815-28F8-C3378E5ADB84}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/PlayerMovement.cs">
-    <Files>
-      <File FileName="Assets/Level_1/Coloring.cs" Line="1" Column="1" />
-      <File FileName="Assets/PlayerMovement.cs" Line="174" Column="38" />
-      <File FileName="Assets/GameManager.cs" Line="1" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Prototype" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Level_1" expanded="True" />
-              <Node name="PlayerMovement.cs" selected="True" />
-            </Node>
-          </Node>
+          <Node name="Prototype" expanded="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="31de263b-10a4-4add-8bde-1e2e63cbfae4" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6f2c2649-1974-4aa4-8ed2-297e81b0e7f6" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

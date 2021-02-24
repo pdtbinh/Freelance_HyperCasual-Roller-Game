@@ -29,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
     private readonly float[] yrotates = { 0f, 90f, 180f, 270f };
 
     // List of material for flashing
+    private int currentColorID;
     private string currentColor;
     
     private List<GameObject> colorFlashings = new List<GameObject>();
@@ -56,6 +57,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject[] pieceAcquiredBuffs;
     public GameObject[] flashingBuffs;
     public GameObject[] confettiEffects;
+    public GameObject[] splatEffects;
 
     // Start is called before the first frame update
     void Start()
@@ -109,6 +111,7 @@ public class PlayerMovement : MonoBehaviour
                         moving = i + 1;
                         transform.rotation = Quaternion.Euler(0f, yrotates[moving - 1], 0f);
                         trail.Play();
+                        StartCoroutine("Splat");
                     }
                 }
             }
@@ -137,6 +140,7 @@ public class PlayerMovement : MonoBehaviour
                                 moving = i + 1;
                                 transform.rotation = Quaternion.Euler(0f, yrotates[moving - 1], 0f);
                                 trail.Play();
+                                StartCoroutine("Splat");
                             }
                         }
 
@@ -153,6 +157,7 @@ public class PlayerMovement : MonoBehaviour
             CheckForColorFlashings();
             CheckForColorPieces();
             CheckForWarningSign();
+            Splat();
         }
     }
 
@@ -185,6 +190,8 @@ public class PlayerMovement : MonoBehaviour
                 && Vector3.Distance(colorFlashings[i].transform.position, transform.position) < 0.3f)
             {
                 Handheld.Vibrate();
+
+                currentColorID = i + 1;
 
                 flashingBuffs[i].SetActive(true);
 
@@ -265,6 +272,7 @@ public class PlayerMovement : MonoBehaviour
     private void StopMoving()
     {
         allowedInput = true;
+        StopAllCoroutines();
     }
 
     // Tune the player's position to pretty numbers
@@ -313,5 +321,17 @@ public class PlayerMovement : MonoBehaviour
         PlayerPrefs.SetInt("Level", currentLevel + 1);
 
         RestartGame();
+    }
+
+    private IEnumerator Splat()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(0.018f);
+
+            GameObject splat = Instantiate(splatEffects[currentColorID],
+                transform.position,
+                Quaternion.Euler(-90f, 0f, 0f));
+        }
     }
 }

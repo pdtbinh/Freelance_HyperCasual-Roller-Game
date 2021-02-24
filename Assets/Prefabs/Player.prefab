@@ -175,6 +175,11 @@ MonoBehaviour:
   confettiEffects:
   - {fileID: 0}
   - {fileID: 0}
+  splatEffects:
+  - {fileID: 196758, guid: e2550dae06524a94bbc4bcdf375a88b9, type: 3}
+  - {fileID: 196758, guid: 1dac43bc4a06b4349a4f0db6f3486da2, type: 3}
+  - {fileID: 196758, guid: 367b0d5d4f3fb4f7286ef2a874cffc9f, type: 3}
+  - {fileID: 196758, guid: b595ef4d3478e42a4869943715436f58, type: 3}
 --- !u!95 &1835666001441775109
 Animator:
   serializedVersion: 3
@@ -4980,7 +4985,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 1
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
