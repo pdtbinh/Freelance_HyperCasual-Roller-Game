@@ -11,8 +11,8 @@ using UnityEngine.SceneManagement;
  * - On every update frame, player constantly checks if there is wall or color flashing or keys ahead.
  * If there is, the class will invoke methods accordingly. 
  * 
- * Since if-else method is taking quite long to implement moving and checking logic of the game
- * I implement a lot of programming with lists to automated the process. */
+ * Since if-else method is taking quite long to implement moving and checking logic of the game,
+ * lists were used instead to automate the process. */
 public class PlayerMovement : MonoBehaviour
 {
     /* ID for moving direction:
