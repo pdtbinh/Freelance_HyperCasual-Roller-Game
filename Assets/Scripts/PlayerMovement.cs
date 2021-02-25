@@ -3,6 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/* This class is used to control player's movement and interaction with the game. 
+ * 
+ * Detailed description on the game logic:
+ * - Player can be assigned 3-4 colors (currently 3, to add another color, just adjust the list below)
+ * - Each different color has different ID: 1, 2, 3 and this match with the keys' color ID
+ * - On every update frame, player constantly checks if there is wall or color flashing or keys ahead.
+ * If there is, the class will invoke methods accordingly. 
+ * 
+ * Since if-else method is taking quite long to implement moving and checking logic of the game
+ * I implement a lot of programming with lists to automated the process. */
 public class PlayerMovement : MonoBehaviour
 {
     /* ID for moving direction:
@@ -289,8 +299,10 @@ public class PlayerMovement : MonoBehaviour
         return currentCoordinate;
     }
 
+    // Restart game is called whenever a level is completed or restart
     private void RestartGame()
     {
+        // If level is completed, play animation on the maze
         if (colorSatisfactions[0] && colorSatisfactions[1] && colorSatisfactions[2])
         {
             GameObject maze = GameObject.FindGameObjectWithTag("Maze");
@@ -298,6 +310,8 @@ public class PlayerMovement : MonoBehaviour
             warning.SetActive(false);
             Invoke("ReloadScene", 4.5f);
         }
+
+        // Else, simply reload the scene
         else
         {
             Invoke("ReloadScene", 1.5f);
@@ -309,8 +323,10 @@ public class PlayerMovement : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    // This is called whenever player completes a level
     private void FinishGame()
     {
+        // Player the confetti effects
         for (int i = 0; i < confettiEffects.Length; i++)
         {
             confettiEffects[i].SetActive(true);
@@ -320,9 +336,11 @@ public class PlayerMovement : MonoBehaviour
         int currentLevel = PlayerPrefs.GetInt("Level", 1);
         PlayerPrefs.SetInt("Level", currentLevel + 1);
 
+        // Play animation to show player the colored picture
         RestartGame();
     }
 
+    // This is used to spawn the spat effects on the player trails
     private IEnumerator Splat()
     {
         while (true)

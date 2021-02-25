@@ -3034,11 +3034,11 @@ PrefabInstance:
     - target: {fileID: 6071008219068614597, guid: 5e733481a5739414b8bf06096baea5f4, type: 3}
       propertyPath: photos.Array.data[1]
       value: 
-      objectReference: {fileID: 1831645178988110162}
+      objectReference: {fileID: 1831645178307923982}
     - target: {fileID: 6071008219068614597, guid: 5e733481a5739414b8bf06096baea5f4, type: 3}
       propertyPath: photos.Array.data[2]
       value: 
-      objectReference: {fileID: 1831645178307923982}
+      objectReference: {fileID: 1831645178988110162}
     - target: {fileID: 6071008219068614597, guid: 5e733481a5739414b8bf06096baea5f4, type: 3}
       propertyPath: coloredSprites.Array.data[0]
       value: 
@@ -3046,11 +3046,11 @@ PrefabInstance:
     - target: {fileID: 6071008219068614597, guid: 5e733481a5739414b8bf06096baea5f4, type: 3}
       propertyPath: coloredSprites.Array.data[1]
       value: 
-      objectReference: {fileID: 21300000, guid: e1034b75074034c44bcd9605d3ea8398, type: 3}
+      objectReference: {fileID: 21300000, guid: 268eb1b47ecf044bda63a497808db467, type: 3}
     - target: {fileID: 6071008219068614597, guid: 5e733481a5739414b8bf06096baea5f4, type: 3}
       propertyPath: coloredSprites.Array.data[2]
       value: 
-      objectReference: {fileID: 21300000, guid: 268eb1b47ecf044bda63a497808db467, type: 3}
+      objectReference: {fileID: 21300000, guid: e1034b75074034c44bcd9605d3ea8398, type: 3}
     - target: {fileID: 6263207955336361534, guid: 5e733481a5739414b8bf06096baea5f4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.68
@@ -3254,11 +3254,11 @@ PrefabInstance:
     - target: {fileID: 7223350367623672881, guid: 2b3cc834923524ccfa12666bd74716e8, type: 3}
       propertyPath: photos.Array.data[1]
       value: 
-      objectReference: {fileID: 1831645178988110162}
+      objectReference: {fileID: 1831645178307923982}
     - target: {fileID: 7223350367623672881, guid: 2b3cc834923524ccfa12666bd74716e8, type: 3}
       propertyPath: photos.Array.data[2]
       value: 
-      objectReference: {fileID: 1831645178307923982}
+      objectReference: {fileID: 1831645178988110162}
     - target: {fileID: 7223350367623672881, guid: 2b3cc834923524ccfa12666bd74716e8, type: 3}
       propertyPath: coloredSprites.Array.data[0]
       value: 
@@ -3266,11 +3266,11 @@ PrefabInstance:
     - target: {fileID: 7223350367623672881, guid: 2b3cc834923524ccfa12666bd74716e8, type: 3}
       propertyPath: coloredSprites.Array.data[1]
       value: 
-      objectReference: {fileID: 21300000, guid: e1034b75074034c44bcd9605d3ea8398, type: 3}
+      objectReference: {fileID: 21300000, guid: 268eb1b47ecf044bda63a497808db467, type: 3}
     - target: {fileID: 7223350367623672881, guid: 2b3cc834923524ccfa12666bd74716e8, type: 3}
       propertyPath: coloredSprites.Array.data[2]
       value: 
-      objectReference: {fileID: 21300000, guid: 268eb1b47ecf044bda63a497808db467, type: 3}
+      objectReference: {fileID: 21300000, guid: e1034b75074034c44bcd9605d3ea8398, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b3cc834923524ccfa12666bd74716e8, type: 3}
 --- !u!4 &3956497693352026525 stripped
@@ -3426,11 +3426,11 @@ PrefabInstance:
     - target: {fileID: 7270713960529938891, guid: ae9c655f471a1473fa35ae77d14789dd, type: 3}
       propertyPath: photos.Array.data[1]
       value: 
-      objectReference: {fileID: 1831645178988110162}
+      objectReference: {fileID: 1831645178307923982}
     - target: {fileID: 7270713960529938891, guid: ae9c655f471a1473fa35ae77d14789dd, type: 3}
       propertyPath: photos.Array.data[2]
       value: 
-      objectReference: {fileID: 1831645178307923982}
+      objectReference: {fileID: 1831645178988110162}
     - target: {fileID: 7270713960529938891, guid: ae9c655f471a1473fa35ae77d14789dd, type: 3}
       propertyPath: coloredSprites.Array.data[0]
       value: 
@@ -3438,11 +3438,11 @@ PrefabInstance:
     - target: {fileID: 7270713960529938891, guid: ae9c655f471a1473fa35ae77d14789dd, type: 3}
       propertyPath: coloredSprites.Array.data[1]
       value: 
-      objectReference: {fileID: 21300000, guid: e1034b75074034c44bcd9605d3ea8398, type: 3}
+      objectReference: {fileID: 21300000, guid: 268eb1b47ecf044bda63a497808db467, type: 3}
     - target: {fileID: 7270713960529938891, guid: ae9c655f471a1473fa35ae77d14789dd, type: 3}
       propertyPath: coloredSprites.Array.data[2]
       value: 
-      objectReference: {fileID: 21300000, guid: 268eb1b47ecf044bda63a497808db467, type: 3}
+      objectReference: {fileID: 21300000, guid: e1034b75074034c44bcd9605d3ea8398, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae9c655f471a1473fa35ae77d14789dd, type: 3}
 --- !u!4 &7073207212873949536 stripped

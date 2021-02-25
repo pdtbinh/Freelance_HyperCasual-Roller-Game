@@ -5,8 +5,10 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 
+/* This class is used to control levels counter in UI. */
 public class GameManager : MonoBehaviour
 {
+    // Text of the level counter
     public TextMeshProUGUI level;
 
     // Start is called before the first frame update
@@ -19,9 +21,9 @@ public class GameManager : MonoBehaviour
         level.text = "Level " + currentLevel.ToString();
     }
 
+    // This is to restart the current level
     public void ResetLevel()
     {
-        PlayerPrefs.DeleteAll();
         SceneManager.LoadScene(0);
     }
 }
